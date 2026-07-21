@@ -66,7 +66,7 @@
 
 ## ✨ 系统功能
 
-### 👤 用户端
+### 用户端
 
 | 功能 | 描述 |
 |------|------|
@@ -82,7 +82,7 @@
 | **个人中心** | 管理自己的发布记录、认领记录 |
 | **图片上传** | 支持上传物品图片 |
 
-### 🛡️ 管理员端
+### 管理员端
 
 | 功能 | 描述 |
 |------|------|
@@ -100,46 +100,46 @@
 ```
 lost-and-found-api/
 ├── src/main/java/com/lostfound/
-│   ├── common/              # 通用工具类
-│   │   └── Result.java      # 统一 API 响应封装
-│   ├── config/              # 配置类
-│   │   ├── CorsConfig.java       # 跨域配置
-│   │   ├── JwtInterceptor.java   # JWT 拦截器
-│   │   ├── MyMetaObjectHandler.java  # MyBatis-Plus 自动填充
-│   │   └── WebMvcConfig.java     # Web MVC 配置
-│   ├── controller/          # 控制器层（API 接口）
-│   │   ├── AdminController.java     # 管理员接口
-│   │   ├── ClaimController.java     # 认领接口
-│   │   ├── CommentController.java   # 评论接口
-│   │   ├── FileUploadController.java # 文件上传接口
-│   │   ├── FoundItemController.java  # 拾物接口
-│   │   ├── LostItemController.java   # 失物接口
-│   │   └── UserController.java       # 用户接口
-│   ├── dto/                 # 数据传输对象
+│   ├── common/                        # 通用工具类
+│   │   └── Result.java                # 统一 API 响应封装
+│   ├── config/                        # 配置类
+│   │   ├── CorsConfig.java            # 跨域配置
+│   │   ├── JwtInterceptor.java        # JWT 拦截器
+│   │   ├── MyMetaObjectHandler.java   # MyBatis-Plus 自动填充
+│   │   └── WebMvcConfig.java          # Web MVC 配置
+│   ├── controller/                    # 控制器层（API 接口）
+│   │   ├── AdminController.java       # 管理员接口
+│   │   ├── ClaimController.java       # 认领接口
+│   │   ├── CommentController.java     # 评论接口
+│   │   ├── FileUploadController.java  # 文件上传接口
+│   │   ├── FoundItemController.java   # 拾物接口
+│   │   ├── LostItemController.java    # 失物接口
+│   │   └── UserController.java        # 用户接口
+│   ├── dto/                           # 数据传输对象
 │   │   ├── LoginDto.java
 │   │   ├── RegisterDto.java
 │   │   └── PageDto.java
-│   ├── entity/              # 实体类
+│   ├── entity/                        # 实体类
 │   │   ├── User.java
 │   │   ├── LostItem.java
 │   │   ├── FoundItem.java
 │   │   ├── Claim.java
 │   │   └── Comment.java
-│   ├── exception/           # 全局异常处理
+│   ├── exception/                     # 全局异常处理
 │   │   └── GlobalExceptionHandler.java
-│   ├── mapper/              # MyBatis-Plus Mapper 接口
-│   ├── service/             # 业务逻辑层
-│   │   ├── impl/            # 业务实现类
-│   │   └── ...Service.java  # 业务接口
-│   └── utils/               # 工具类
-│       ├── JwtUtils.java        # JWT 工具
-│       └── PasswordUtils.java   # 密码加密工具
+│   ├── mapper/                        # MyBatis-Plus Mapper 接口
+│   ├── service/                       # 业务逻辑层
+│   │   ├── impl/                      # 业务实现类
+│   │   └── ...Service.java            # 业务接口
+│   └── utils/                         # 工具类
+│       ├── JwtUtils.java              # JWT 工具
+│       └── PasswordUtils.java         # 密码加密工具
 ├── src/main/resources/
-│   ├── application.yml      # 应用配置文件
-│   └── init.sql             # 数据库初始化脚本
-├── uploads/                 # 文件上传目录
-├── pom.xml                  # Maven 依赖配置
-└── target/                  # 编译输出（已忽略）
+│   ├── application.yml                # 应用配置文件
+│   └── init.sql                       # 数据库初始化脚本
+├── uploads/                           # 文件上传目录
+├── pom.xml                            # Maven 依赖配置
+└── target/                            # 编译输出（已忽略）
 ```
 
 ### 前端结构
@@ -270,10 +270,10 @@ npm run dev
 你可以在数据库中手动将某个用户的 `role` 字段设置为 `admin` 以获取管理员权限。
 
 管理后台功能：
-- 📊 **数据看板** — 用户数、物品发布量、认领量等统计图表
-- ✅ **内容审核** — 审核发布的失物/拾物信息
-- 👥 **用户管理** — 查看、禁用用户账号
-- 📁 **物品管理** — 管理所有物品信息
+-  **数据看板** — 用户数、物品发布量、认领量等统计图表
+-  **内容审核** — 审核发布的失物/拾物信息
+-  **用户管理** — 查看、禁用用户账号
+-  **物品管理** — 管理所有物品信息
 
 ---
 
